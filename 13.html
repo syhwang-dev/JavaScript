@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <!-- 외부스크립트 가져오기 / html 파일에 js를 쓰기 싫어! -->
+    <!-- <script src="./script/13.js"></script> -->
+    
+    <title>K-Digital 3기</title>
+    
+    <!-- JS 사용하기 -->
+    <!-- 자바스크립트 위치1 -->
+    <!-- alert 확인하면 main 실행 -->
+    <!-- <script>
+        alert("안녕하세요.");
+    </script> -->
+
+</head>
+<body>
+    <!-- 자바스크립트 위치1 -->
+    <!-- <script>
+        alert("안녕하세요.");
+    </script> -->
+    <main class="container">
+        <article>
+            <header><h1>자바스크립트</h1></header>
+            <!-- h2에 js를 넣고 싶다! -->
+            <h2 id="h2Id" class="h2Class"></h2> 
+            <footer>
+                <form>
+                    <!-- 버튼이 눌러지면 js 호출 -> 버튼에 이벤트 출력 -->
+                    <button onclick="show();">눌러주세요.</button>
+                </form>
+            </footer>
+        </article>
+
+    </main>
+
+    <!-- 자바스크립트 위치3 -->
+    <!-- 무조건 나오는게 싫다! 제어하자! 원하는 시점에 만들고자 하면 function 사용 / 아래를 보자! -->
+    <!-- <script>
+        alert("안녕하세요.");
+    </script> -->
+    
+    <!-- <script>
+        function show() {
+            alert("안녕하세요.");
+        }
+    </script> -->
+    <!-- 피코와 충돌나므로 아래에 위치시킴 -->
+    <script src="./script/13.js"></script>
+
+</body>
+</html>
