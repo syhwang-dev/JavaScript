@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="a.jsp">
+        <!-- for값을 안 주고 이렇게 써도 된다. -->
+        <label>텍스트박스
+            <input type="text" name="txt1" required><br>
+        </label>
+        <br>
+
+        <label for="emailid">Email</label>
+        <input type="email" name="email" id="emailid" required><br>
+
+        <fieldset>
+            <legend>좋아하는 언어</legend>
+            <!-- radio는 반드시 value값을 줘야한다. -->
+            
+            <input type="radio" name="fav" value="python" id="pythonid">
+            <label for="pythonid">파이썬</label>
+            <input type="radio" name="fav" value="R">R
+            <input type="radio" name="fav" value="Java">Java
+            <!-- 위의 코드는 레이블이 없으면 선택이 안 된다. label태그로 연결하면 글자를 누르면 체크가 된다. 그래서 써주는 것이좋다. -->
+
+        </fieldset>
+        <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label> -->
+        
+        <!-- form 태그의 기본 -->
+        <br><br>
+        <input type="text" name="txt1">
+        <!-- action을 안 주면 다시 돌아온다. / 버튼으로 submit을 제어할 수도 있고, 함수를 사용할 수도 있다. -->
+        <input type="submit" value="확인">
+        <!-- 입력을 reset 시켜준다. -->
+        <input type="reset" value="취소">
+        
+        <!-- 버튼 -->
+
+        <input type="button" value="버튼"> <!-- 전통적인 방식의 버튼 -->
+        <button>버튼2</button> <!-- 새로나온 방식의 버튼 -->
+
+        <br><br>
+        <form action="/action_page.php">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit" value="Submit">
+        </form>
+
+
+
+    </form>
+</body>
+</html>
