@@ -1,0 +1,62 @@
+<!-- JS > setAttribute 사용하는 방법 -->
+
+<!-- html 문서임을 의미 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 디바이스에 따라 잡겠다는 의미 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script src="./script/16-1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/13.css">
+    
+    <title>K-Digital 3기</title>
+
+
+</head>
+<body>
+    <main class="container">
+        <article>
+            <header><h1 id="h1Id">주사위게임</h1></header>
+            <h2 id="h2Id" class="h2Class"></h2> 
+            <footer>
+                <form>
+                    <!-- Radio -->
+                    <fieldset>
+                        <legend><h2>숫자선택</h2></legend>
+                        <div class="grid">
+                            <!-- label의 for의 값과 input의 id의 값을 같게 한다. -->
+                            <label for="r1">
+                                <input type="radio" id="r1" name="num" value="1">1
+                            </label>
+                            <label for="r2">
+                                <input type="radio" id="r2" name="num" value="2">2
+                            </label>
+                            <label for="r3">
+                                <input type="radio" id="r3" name="num" value="3">3
+                            </label>
+                            <label for="r4">
+                                <input type="radio" id="r4" name="num" value="4">4
+                            </label>
+                            <label for="r5">
+                                <input type="radio" id="r5" name="num" value="5">5
+                            </label>
+                            <label for="r6">
+                                <input type="radio" id="r6" name="num" value="6">6
+                            </label>
+                        </div>
+                      </fieldset>
+                      <div class="grid">
+                        <!-- 16.html과 다르게 하기 / 기존의 onclick="show();" 삭제 / 기존: 클릭하면 이벤트 발생-->
+                        <!-- 온클릭을 달지 않고 자바스크립로 처리하기 -->
+                        <button id="bt1">확인</button>
+                        <button type="reset">취소</button>
+                    </div>
+                </form>
+            </footer>
+        </article>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- JS > setAttribute 사용하는 방법 -->
+
+<!-- html 문서임을 의미 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 디바이스에 따라 잡겠다는 의미 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- pico css CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <!-- 외부스크립트 가져오기 / html 파일에 js를 쓰기 싫어! -->
+    <script src="./script/14.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/13.css">
+    
+    <title>K-Digital 3기</title>
+
+
+</head>
+<body>
+    <!-- 자바스크립트 위치2 -->
+    <!-- <script>
+        alert("안녕하세요.");
+    </script> -->
+    <!-- 중간 정렬을 위해 main class="container" 사용 -->
+    <main class="container">
+        <article>
+            <header><h1>자바스크립트</h1>
+                <div id="hdiv"></div>
+            </header>
+            <!-- 13시리즈와 다른 점: img 태그 / 그런데 img 태그의 src 속성이 없음. src 속성은 js에서 가져옴-->
+            <h2 id="h2Id" class="h2Class"><img></h2> 
+            <footer>
+                <form>
+                    <button onclick="show();">주사위를 던지세요.</button> <!-- 전통적인 호출 방식 / button이 onclick되면 show() 호출 -->
+                </form>
+            </footer>
+        </article>
+    </main>
+
+</body>
+</html>
