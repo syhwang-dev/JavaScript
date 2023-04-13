@@ -26,7 +26,7 @@ const selToggle = (s1, s2, t1, t2) => {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { // 돔이 완성되고 나면 이벤트를 달겠다 라는 의미
     // 돔이 완성되면 아래를 실행
 
     const sel1 = document.querySelector('#sel1');
