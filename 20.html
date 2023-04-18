@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/20.css">
+    <script src="./script/20.js"></script>
+    <style>
+        .grid {
+            display: grid;
+            gap: 1px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box {
+        padding: 50px;
+        background: #ccc;
+        color: #AAA;
+        border: 1px solid #555;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <article>
+            <header>
+                <h1>폭탄게임</h1>
+            </header>
+            <div class="grid">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+            <div class="grid">
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+            <div class="grid">
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+            </div>
+        </article>
+        <footer>
+            <button type="reset">취소</button>
+        </footer>
+    </main>
+    
+</body>
+</html>
